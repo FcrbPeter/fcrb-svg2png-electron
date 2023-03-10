@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>SVG to PNG</title>
+</head>
+
+<body>
+<h2>HKMCI - SVG2PNG</h2>
+
+<div>
+    <div class="input-margin">
+        <label for="image">The SVG image to convert:</label>
+        <br/>
+        <input type="button" id="image" value="Choose">
+        <div id="image-path"></div>
+    </div>
+</div>
+
+<br/>
+
+<div id="msg">
+
+</div>
+
+<div>
+    <input id="convert" type="button" value="Convert">
+</div>
+
+<br/>
+
+<div>
+    <p>Please 'Export as SVG' with the following settings.</p>
+    Deselect all 4 options:
+    <ul>
+        <li>Transparent Background</li>
+        <li>Shadow</li>
+        <li>Include a copy of my diagram</li>
+        <li>Embed Images</li>
+    </ul>
+</div>
+</body>
+
+</html>
